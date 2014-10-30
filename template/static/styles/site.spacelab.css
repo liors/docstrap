@@ -1717,8 +1717,8 @@ table {
   width: 100%;
   margin-bottom: 21px;
 }
-.table th,
-.table td {
+table th, .table th,
+table td, .table td {
   padding: 8px;
   line-height: 21px;
   text-align: left;
@@ -1735,6 +1735,8 @@ table {
 .table caption + thead tr:first-child td,
 .table colgroup + thead tr:first-child th,
 .table colgroup + thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td,
 .table thead:first-child tr:first-child th,
 .table thead:first-child tr:first-child td {
   border-top: 0;
@@ -5649,8 +5651,8 @@ div.subnav-fixed {
   padding-right: 20px;
 }
 .navbar .dropdown-menu {
-  padding: 20px;
-  max-height: 300px;
+  padding: 10px 0px 10px 0px;
+  max-height: 400px;
   overflow: auto;
   width: 300px;
   background-color: #6c737e;
@@ -5668,10 +5670,11 @@ div.subnav-fixed {
   background-color: #6c737e;
 }
 .navbar .dropdown-menu a {
-  padding-left: 0;
+  padding-left: 20px;
   padding-right: 5px;
   font-weight: 500;
-  font-size: 115%;
+  font-size: 100%;
+  line-height: 16px;
 }
 #toc {
   position: fixed;
@@ -5727,7 +5730,7 @@ div.subnav-fixed {
   text-align: center;
   color: #6c737e;
   width: 100%;
-  display: block;
+  display: none;
 }
 .page-title {
   font-size: 220%;
@@ -5793,4 +5796,11 @@ code {
   font-size: 12px;
   line-height: 15px;
   padding: 12px 4px !important;
+}
+
+h4.name {
+  padding-top: 45px;
+}
+h3.subsection-title {
+  padding-top: 45px;
 }
