@@ -99,7 +99,14 @@ var self = this;
 	</dd>
 	<?js } ?>
 
-
+    <?js if (data.experimental) { ?>
+    	<dt class="tag-default">Experimental:</dt>
+    		<dd class="tag-default">
+    			<ul class="dummy">
+    				<li>True</li>
+    			</ul>
+    	</dd>
+	<?js } ?>
 
 	<?js if (data.meta && this.navOptions.outputSourceFiles) {?>
 	<dt class="tag-source">Source:</dt>
